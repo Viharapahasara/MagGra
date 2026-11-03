@@ -1,0 +1,7 @@
+{
+  "name": "MacGra Advertising",
+  "description": "Sri Lankan commercial advertising, large-format hoardings, branding, and bespoke interior workspace solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

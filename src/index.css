@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* MagGra Official Logo Colors: Royal Blue & Sunset Solar Orange */
+  --color-brand-blue: #1a56b8;
+  --color-brand-blue-hover: #144494;
+  --color-brand-blue-light: #ebf3ff;
+  --color-brand-blue-subtle: #f0f6ff;
+
+  --color-brand-orange: #f15a24;
+  --color-brand-orange-hover: #d74614;
+  --color-brand-orange-light: #fff3ec;
+  --color-brand-orange-subtle: #fef8f4;
+
+  --color-ink: #0f172a;
+  --color-ink-secondary: #334155;
+  --color-muted: #64748b;
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+:root {
+  color-scheme: light;
+  --blue: #1a56b8;
+  --blue-light: #ebf3ff;
+  --orange: #f15a24;
+  --orange-light: #fff3ec;
+  --ink: #0f172a;
+  --surface: #f8fafc;
+  --pointer-x: 50vw;
+  --pointer-y: 40vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #0f172a;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Ambient glow matching MagGra Blue & Solar Orange */
+.ambient-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    800px circle at var(--pointer-x, 50vw) var(--pointer-y, 40vh),
+    rgba(26, 86, 184, 0.07),
+    rgba(241, 90, 36, 0.04) 45%,
+    transparent 75%
+  );
+  transition: opacity 0.5s ease;
+}
+
+/* Modern clean grid texture */
+.bg-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Ticker marquee animation */
+@keyframes tickerSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: tickerSlide 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Floating badge animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(6deg);
+  }
+}
+
+.animate-float {
+  animation: softFloat 5s ease-in-out infinite;
+}
+
+/* Serif font utility */
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
