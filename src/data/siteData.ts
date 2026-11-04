@@ -55,7 +55,7 @@ export const SITE_BRAND = {
     email: "macgra.advertising@gmail.com",
     phone: "+94 71 439 1602",
     phoneDisplay: "+94 71 439 1602",
-    whatsapp: "94771234567",
+    whatsapp: "94714391602",
     address: "Bandaragama,Sri Lanka",
     serving: "Serving businesses and institutions across all 9 provinces in Sri Lanka.",
     hours: "Monday – Saturday: 8:30 AM – 6:00 PM"
