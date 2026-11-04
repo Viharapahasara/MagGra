@@ -356,10 +356,10 @@ export const PROJECTS: Project[] = [
     label: "Branding",
     location: "Colombo / Island-wide Outlets",
     materials: "High-gloss laminated vinyl, custom-cut POS signage boards",
-    image: "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg",
+    image: "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg",
     images: [
-      "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.55.jpeg",
-      "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg"
+      "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.55.jpeg",
+      "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg"
     ],
     alt: "Elephant House commercial branding installation",
     imageAlts: [
