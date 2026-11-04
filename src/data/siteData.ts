@@ -3,7 +3,7 @@ export interface Project {
   client: string;
   title: string;
   service: string;
-  category: 'banners' | 'hoardings' | 'interiors' | 'branding' | 'vehicle-branding';
+  category: 'banners' | 'hoardings' | 'interiors' | 'branding' | 'vehicle-branding' ;
   categoryLabel: string;
   label: string;
   date?: string;
@@ -52,11 +52,11 @@ export const SITE_BRAND = {
   tagline: "Sri Lankan Spaces, Made to Be Seen.",
   mission: "MacGra Advertising brings Sri Lankan brands to life across the street and inside spaces where people work. From a first sketch to final installation, our local team brings design, fabrication, and fit-out together.",
   contact: {
-    email: "info@macgra.lk",
-    phone: "+94 77 123 4567",
-    phoneDisplay: "+94 77 123 4567",
+    email: "macgra.advertising@gmail.com",
+    phone: "+94 71 439 1602",
+    phoneDisplay: "+94 71 439 1602",
     whatsapp: "94771234567",
-    address: "No. 48, High Level Road, Nugegoda, Colombo, Sri Lanka",
+    address: "Bandaragama,Sri Lanka",
     serving: "Serving businesses and institutions across all 9 provinces in Sri Lanka.",
     hours: "Monday – Saturday: 8:30 AM – 6:00 PM"
   },
@@ -356,10 +356,10 @@ export const PROJECTS: Project[] = [
     label: "Branding",
     location: "Colombo / Island-wide Outlets",
     materials: "High-gloss laminated vinyl, custom-cut POS signage boards",
-    image: "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.56 (1).jpeg",
+    image: "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg",
     images: [
-      "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.56 (1).jpeg",
-      "/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg"
+      "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.55.jpeg",
+      "public/img/Branding/Elephant House/WhatsApp Image 2026-11-03 at 12.33.57.jpeg"
     ],
     alt: "Elephant House commercial branding installation",
     imageAlts: [
